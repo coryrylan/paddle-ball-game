@@ -1,0 +1,14 @@
+﻿body {
+    background-color:#000;
+}
+
+canvas {
+    border: 1px solid black;
+    position: relative;
+    background-color:#FFF;
+    cursor:none;
+}
+
+.canvasWrap {
+}
+
