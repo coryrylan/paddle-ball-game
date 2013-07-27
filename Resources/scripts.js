@@ -17,11 +17,13 @@
     var vy = 5;
     var vx = 5;
 
-    // Game loop clock 60fps
-    window.setInterval(function () {
+    // Game loop clock
+    function gameLoop() {
         Game.Draw();
         Game.Update();
-    }, 1000 / 60);
+        requestAnimationFrame(gameLoop);
+    }
+    requestAnimationFrame(gameLoop);
 
     var Game = (function () {
         var s; // bind alias to public settings
